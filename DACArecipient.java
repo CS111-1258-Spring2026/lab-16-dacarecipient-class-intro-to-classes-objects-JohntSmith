@@ -1,7 +1,7 @@
 /**
  * Represents one person receiving Deferred Action for Childhood Arrivals (DACA).
  * 
- * <TODO: add @author info here for all group-mates!>
+ *  @author Jonathan Smith
  *
  *	@version 1.0
  **/
@@ -20,83 +20,72 @@
 public class DACArecipient
 {
 	/***** INSTANCE VARIABLES *****/
-	//TODO: Declare the instance variables. 
-	private String surname;
-	private String givenName;
-	private String uscisNumber;
-	private String countryOfOrigin;
-	private String birthday;
-	private String validFromDat;
-	private String expirationDate;
-	private String sex;
+	private String surname, givenName, uscisNumber, countryOfOrigin;
+	private int birthday, validFromDate, expirationDate;
+	private char sex;
 
 	
 	/***** ACCESSORS *****/ //getters
-	//TODO: Write the getter for each instance variable. Remember to include documentation for each method.
 	public String getSurname(){
 		return this.surname;
 	}
 	public String getGivenName(){
 		return this.givenName;
 	}
-	public String uscisNumber(){
+	public String getUscisNumber(){
 		return this.uscisNumber;
 	}
 	public String getCountryOfOrigin(){
 		return this.countryOfOrigin;
 	}
-	public String getBirthday(){
+	public int getBirthday(){
 		return this.birthday;
 	}
-	public String getValidFromDat(){
-		return this.validFromDat;
+	public int getValidFromDate(){
+		return this.validFromDate;
 	}
-	public String getExpirationDate(){
+	public int getExpirationDate(){
 		return this.expirationDate;
 	}
-	public String getSex(){
+	public char getSex(){
 		return this.sex;
 	}
 
 
 	/***** MUTATORS *****/ //setters
-	//TODO: Write the setter for each instance variable. Remember to include documentation for each method.
 	public void setSurname(String surname){
 		this.surname = surname;
 	}
 	public void setGivenName(String givenName){
 		this.givenName = givenName;
 	}
-		public void setUscisNumber(String uscisNumber){
+	public void setUscisNumber(String uscisNumber){
 		this.uscisNumber = uscisNumber;
 	}
 	public void setCountryOfOrigin(String countryOfOrigin){
 		this.countryOfOrigin = countryOfOrigin;
 	}
-		public void setBirthday(String birthday){
+	public void setBirthday(int birthday){
 		this.birthday = birthday;
 	}
-	public void setValidFromDat(String validFromDat){
-		this.validFromDat = validFromDat;
+	public void setValidFromDate(int validFromDate){
+		this.validFromDate = validFromDate;
 	}
-	public void setExpirationDate(String expirationDate){
+	public void setExpirationDate(int expirationDate){
 		this.expirationDate = expirationDate;
 	}
-	public void setSex(String sex){
+	public void setSex(char sex){
 		this.sex = sex;
 	}
-
-
-
-	//TODO: Write the setAll method. Remember to include documentation. // OR setSurname(Chapeton-Lamas);
-	public void setAll(String surname, String givenName, int uscisNumber, String countryOfOrigin, int birthday, int validFromDat, int expirationDate, String sex){
-		this.surname = "Chapeton-Lamas";
-		this.givenName = "Nery";
-		this.uscisNumber = 12-4-789;
-		this.countryOfOrigin = "Guatemala";
-		this.birthday = 
-
-		//setSurname("Cahpeton-Lamas");
-		
+	
+	public void setAll(String surname, String givenName, String uscisNumber, String countryOfOrigin, int birthday, int validFromDate, int expirationDate, char sex){
+		this.surname = surname;
+		this.givenName = givenName;
+		this.uscisNumber = uscisNumber;
+		this.countryOfOrigin = countryOfOrigin;
+		this.birthday = birthday;
+		this.validFromDate = validFromDate;
+		this.expirationDate = expirationDate;
+		this.sex = sex;
 	}
 }
