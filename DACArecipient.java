@@ -5,16 +5,38 @@
  *
  *	@version 1.0
  **/
-
-//TODO: Complete UML class diagram
 /* UML CLASS DIAGRAM:
 -----------------------------------------
-<class name>
+              DACARecipient
 -----------------------------------------
-<data, i.e. variables>
+- surname : String
+- givenName : String
+- uscisNumber : String
+- countryOfOrigin : String
+- birthday : int
+- validFromDate : int
+- expirationDate : int
+- sex : char
 -----------------------------------------
-<actions, i.e. methods>
++ getSurname() : String
++ getGivenName() : String
++ getUscisNumber() : String
++ getCountryOfOrigin() : String
++ getBirthday() : int
++ getValidFromDate() : int
++ getExpirationDate() : int
++ getSex() : char
++ setSurname(surname : String) : void
++ setGivenName(givenName : String) : void
++ setUscisNumber(uscisNumber : String) : void
++ setCountryOfOrigin(countryOfOrigin : String) : void
++ setBirthday(birthday : int) : void
++ setValidFromDate(validFromDate : int) : void
++ setExpirationDate(expirationDate : int) : void
++ setSex(sex : char) : void
++ setAll(surname, givenName, ..., sex) : void
 -----------------------------------------
+DACArecipient.java
 */
 
 public class DACArecipient
